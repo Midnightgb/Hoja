@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.noselect{
+    user-select: none;
+}
+
+body{
+    text-align: center;
+}
+
+nav{
+    /* fondo con transparencia en el ultimo valor */
+    background:rgba(0, 0, 0, 0.5);
+    user-select: none;
+    position: fixed; /* dejar un elemento en un lugar fijo */
+    width: 100%;
+    height: 1.5em;
+    padding: 1.5em; /* margen interno */
+    /* unidad de medida en em es de acuerdo al tamaño de letra del dispositivo */
+    z-index: 1;
+}
+
+nav li{
+    display: inline-block; /* alinear las cajas de forma horizontal */
+    margin: 0 .8em;
+}
+
+nav li a{
+    text-decoration: none; /* no hay decoracion en el texto */
+    font-size: 1.2em; /* tamaño de la fuente */
+    font-weight: bold; /* grosor de la fuente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* tipo de letra */ 
+    color: rgb(15, 222, 222);
+}
+
+nav li a:hover{
+    color: rgb(0, 255, 255);
+    font-size: 1.1em;
+    transition: 0.4s;
+}
+
+#persona{
+    width: 15em;
+    border: 2px solid rgb(0, 255, 255); 
+    border-radius: 80%;
+    box-shadow: 0 0 15px 5px black;
+}
+
+#persona:hover{
+    transform:rotateY(180deg);
+    transition: 1s;
+}
+
+header{
+    background-color:rgb(220, 250, 255);
+    background-image: url("../img/pexels-anni-roenkae-2832382.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5em;
+    padding-bottom: 1.5em;
+}
+
+h1{
+    padding-top: .2em;
+    color: white;
+    margin: 0.2em;
+    text-shadow: 0 1px 4px white;
+    -webkit-text-stroke: .5px rgb(15, 222, 222);
+    color: rgb(0, 0, 0);
+
+}
+
+header p{
+    color: rgb(15, 222, 222);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+
+section{
+    box-shadow: 0 0 15px 5px black;
+    width: 80%;
+    margin: 2em auto; /* usar margen para centrar */
+    padding: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+    margin: 1.7em 0;
+    border-bottom: 3px rgb(15, 222, 222) dashed;
+    color: rgb(115, 222, 255);
+}
+
+
+.girar{
+    transform:rotate(6deg);
+}
+.boton,.naranja{
+    font-size: .9em;
+    padding: 1em;
+    margin: 1em 0;
+    border-color: black;
+    border-radius: 2em;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.negro{
+    font-size: .9em;
+    padding: 1em;
+    margin: 1em 0;
+    border-color: black;
+    border-radius: 2em;
+    background-color: black;
+    color: white;
+}
+
+.naranja:hover{
+    background-color:grey;
+    transition: .3s;
+}
+
+.negro:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: .3s;
+}
+
+.naranja:active {
+    
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.negro:active {
+    
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.p_perfil{
+    font-size:1.2em;
+    font-style: italic;
+    margin: 0.5em 0em;
+}
+
+#experiencia article{
+    width: 45%;
+    display: inline-block;
+    margin: 1em;
+
+}
+
+#experiencia img{
+    width: 65%;
+}
+h3, p{
+    margin: 1em 0em;
+}
+.php, .cuatroarticulos, .cuatroarticulos article{
+    display: inline-block;
+    vertical-align: top;
+}
+.cuatroarticulos article{
+    width: 40%;
+}
+.php{
+    width: 25%;
+    
+}
+
+.cuatroarticulos{
+    width: 65%;
+}
+
+
+
+.naranja:focus {
+    background-color: red;
+    transition: .3s;
+}
+.php article, .cuatroarticulos article{
+    background-color: aliceblue;
+    margin: .5em;
+    padding: .5em;
+}
+
+footer{
+    width: 100%;
+    background-color:rgb(220, 250, 255);
+    background-image: url(../img/pexels-anni-roenkae-2832382.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacto{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contacto p{
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contacto form input, .contacto form textarea{
+    padding: 1em;
+    margin: 1em 0px;
+    border: rgb(115, 222, 255) solid 3px;
+    width: 60%;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#sent:hover{
+    background-color:rgb(0, 255, 0);
+    cursor: pointer;
+    transition: .3s;
+    border-color: transparent;
+}
+
+iframe{
+    border-radius: 20px;
+}
+#ADSO{
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.582);
+}
